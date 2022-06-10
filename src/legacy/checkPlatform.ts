@@ -1,20 +1,15 @@
-import { LEGACY_AVAILABLE_PLATFORMS } from './constants'
-import { fileExt } from '../utils/fileExt'
+import { LEGACY_AVAILABLE_PLATFORMS } from './constants';
+import { fileExt } from '../utils/fileExt';
 
-export function checkPlatform(
-  platform: string,
-  fileName: string,
-): string | undefined {
-  const extension = fileExt(fileName)
+export function checkPlatform(platform: string, fileName: string): string | undefined {
+  const extension = fileExt(fileName);
   // OSX we should have our .app tar.gz
   if (
-    (fileName.includes('.app') ||
-      fileName.includes('darwin') ||
-      fileName.includes('osx')) &&
+    (fileName.includes('.app') || fileName.includes('darwin') || fileName.includes('osx')) &&
     extension === 'gz' &&
     platform === LEGACY_AVAILABLE_PLATFORMS.MacOS
   ) {
-    return 'darwin'
+    return 'darwin';
   }
 
   // Windows 64 bits
@@ -23,7 +18,7 @@ export function checkPlatform(
     extension === 'zip' &&
     platform === LEGACY_AVAILABLE_PLATFORMS.Win64
   ) {
-    return 'win64'
+    return 'win64';
   }
 
   // Windows 32 bits
@@ -32,15 +27,11 @@ export function checkPlatform(
     extension === 'zip' &&
     platform === LEGACY_AVAILABLE_PLATFORMS.Win32
   ) {
-    return 'win32'
+    return 'win32';
   }
 
   // Linux app image
-  if (
-    fileName.includes('AppImage') &&
-    extension === 'gz' &&
-    platform === LEGACY_AVAILABLE_PLATFORMS.Linux
-  ) {
-    return 'linux'
+  if (fileName.includes('AppImage') && extension === 'gz' && platform === LEGACY_AVAILABLE_PLATFORMS.Linux) {
+    return 'linux';
   }
 }

@@ -1,4 +1,4 @@
-import { LEGACY_AVAILABLE_PLATFORMS } from './constants'
+import { LEGACY_AVAILABLE_PLATFORMS } from './constants';
 
 export function validatePlatform(platform: string): string | undefined {
   switch (platform) {
@@ -6,6 +6,6 @@ export function validatePlatform(platform: string): string | undefined {
     case LEGACY_AVAILABLE_PLATFORMS.Win32:
     case LEGACY_AVAILABLE_PLATFORMS.Win64:
     case LEGACY_AVAILABLE_PLATFORMS.Linux:
-      return platform
+      return platform;
   }
 }

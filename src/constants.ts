@@ -17,12 +17,12 @@ export const ARCH_FILTERS = {
   [AVAILABLE_ARCHITECTURES.x86]: ['x86'],
   [AVAILABLE_ARCHITECTURES.arm64]: ['arm64'],
   [AVAILABLE_ARCHITECTURES.armv7]: ['armv7'],
-} as { [key in AVAILABLE_ARCHITECTURES]: string[] }
+} as { [key in AVAILABLE_ARCHITECTURES]: string[] };
 
 export type Filter = {
-  extension: string
-  matches: string[]
-}
+  extension: string;
+  matches: string[];
+};
 export const PLATFORM_FILTERS = {
   [AVAILABLE_PLATFORMS.MacOS]: {
     extension: 'gz',
@@ -37,5 +37,5 @@ export const PLATFORM_FILTERS = {
     matches: ['AppImage'],
   },
 } as {
-  [key in AVAILABLE_PLATFORMS]: Filter
-}
+  [key in AVAILABLE_PLATFORMS]: Filter;
+};
