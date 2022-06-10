@@ -31,6 +31,13 @@ const renderPlain = () => {
   render.image = function (href, title, text) {
     return '';
   };
+  // render lists?
+  render.list = function (text, ordered, start) {
+    return '';
+  }
+  render.listitem = function(text, task, checked) {
+    return `   ${text}\r\n`;
+  }
   return render;
 };
 
