@@ -36,7 +36,7 @@ const renderPlain = () => {
         return text;
     }
     render.listitem = function (text, task, checked) {
-        return `   ${text}\r\n`;
+        return `   ${htmlEscapeToText(text)}\r\n`;
     }
     return render;
 };
