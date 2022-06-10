@@ -2,7 +2,7 @@ import { marked } from 'marked';
 
 // &#63; to ? helper
 const htmlEscapeToText = (text: string) => {
-    return text.replace(/&#[0-9]*;|&amp;/g, (escapeCode) => {
+    return text.replace(/\&\#[0-9]*;|&amp;/g, (escapeCode) => {
         if (escapeCode.match(/amp/)) {
             return '&';
         }
