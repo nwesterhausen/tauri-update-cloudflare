@@ -20,29 +20,29 @@
     ]
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^3.0.0",
-    "@types/jest": "^27",
-    "@types/marked": "^4.0.3",
-    "@types/semver": "^7.3.9",
-    "@types/service-worker-mock": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.1.0",
+    "@cloudflare/workers-types": "^3.19.0",
+    "@types/jest": "^27.5.2",
+    "@types/marked": "^4.3.2",
+    "@types/semver": "^7.5.4",
+    "@types/service-worker-mock": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-config-typescript": "^3.0.0",
-    "jest": "^27.0.1",
-    "prettier": "^2.3.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.8.8",
     "service-worker-mock": "^2.0.5",
-    "ts-jest": "^27.0.1",
-    "ts-loader": "^9.2.2",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "wrangler": "^2.6.2"
+    "ts-jest": "^27.1.5",
+    "ts-loader": "^9.5.0",
+    "typescript": "^4.9.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^4.10.0",
+    "wrangler": "^2.20.1"
   },
   "dependencies": {
-    "marked": "^4.0.16",
-    "semver": "^7.3.5"
+    "marked": "^4.3.0",
+    "semver": "^7.5.4"
   },
   "prettier": {
     "bracketSameLine": true,
