@@ -4,8 +4,7 @@ compatibility_date = "2023-10-24"
 main = "src/index.ts"
 
 routes = [
-    { pattern = "updates.overseers-manual.dwarffortress.nwest.games", custom_domain = true },
-    { pattern = "overseers-manual-df.updates.nwest.one", custom_domain = true },
+    { pattern = "overseers-manual-df.updates.nwest.one", custom_domain = true, zone_name = "nwest.one" },
 ]
 
 [vars]
