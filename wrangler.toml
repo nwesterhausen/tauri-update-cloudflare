@@ -1,6 +1,6 @@
 name = "tauri-update-server"
 workers_dev = true
-compatibility_date = "2022-03-26"
+compatibility_date = "2023-10-24"
 main = "src/index.ts"
 
 routes = [
